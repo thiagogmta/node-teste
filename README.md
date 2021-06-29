@@ -4,7 +4,7 @@
 >
 > Este repositório apresenta um teste derivado do evento: **Kubernetes Bootcamp 2.0 | Aula 01**
 
-O objetivo deste repositório é executar uma aplicação para Conversão de temperatura em um container Docker.
+O objetivo deste repositório é executar uma aplicação escrita em node para Conversão de temperatura em um container Docker.
 
 ## Requisitos
 
@@ -18,6 +18,30 @@ Em seu terminal execute o comando:
 $ docker container run -d -p 8080:8080 thiagogmta/node-teste:v1
 ```
 
+Para finalizar execute:
+
+```bash
+$ docker container ls -a
+```
+
+Copie o ID do container e posteriormente execute:
+
+```bash
+$ docker container stop <ID>
+$ docker container rm <ID>
+```
+
+Para remover a imagem do container execute:
+
+```bash
+$ docker image ls
+```
+
+Copie o ID da imagem e posteriormente execute:
+
+```bash
+$ docker image rm <ID>
+```
 ![Docker-container-run](img/docker_run.png)
 
 O docker irá fazer o download da imagem do container disponível no Dockerhub. Após o processo abra seu navegador de internet e digite: `http://localhost:8080/api-docs/` a aplicação será exibida:
