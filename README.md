@@ -18,6 +18,12 @@ Em seu terminal execute o comando:
 $ docker container run -d -p 8080:8080 thiagogmta/node-teste:v1
 ```
 
+![Docker-container-run](img/docker_run.png)
+
+O docker irá fazer o download da imagem do container disponível no Dockerhub. Após o processo abra seu navegador de internet e digite: `http://localhost:8080/api-docs/` a aplicação será exibida:
+
+![API](img/api.png)
+
 Para finalizar execute:
 
 ```bash
@@ -42,12 +48,6 @@ Copie o ID da imagem e posteriormente execute:
 ```bash
 $ docker image rm <ID>
 ```
-
-![Docker-container-run](img/docker_run.png)
-
-O docker irá fazer o download da imagem do container disponível no Dockerhub. Após o processo abra seu navegador de internet e digite: `http://localhost:8080/api-docs/` a aplicação será exibida:
-
-![API](img/api.png)
 
 ## Compreendendo:
 
